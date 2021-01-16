@@ -1,1 +1,1 @@
-web: gunicorn e_menu_api.wsgi --log-file -
+web: gunicorn e_menu_api.wsgi
