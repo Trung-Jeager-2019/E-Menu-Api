@@ -25,7 +25,7 @@ prod_db  =  dj_database_url.config(conn_max_age=500)
 SECRET_KEY = '%*go^322sc)c*!+o$f@8i&vt_i@l0wxb_o5e7kwo8)8w*&gced'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -136,4 +136,4 @@ STATICFILES_DIRS = (
 )
 
 #  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
