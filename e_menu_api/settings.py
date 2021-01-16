@@ -15,7 +15,7 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-django_heroku.settings(locals())
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -24,10 +24,11 @@ django_heroku.settings(locals())
 SECRET_KEY = '%*go^322sc)c*!+o$f@8i&vt_i@l0wxb_o5e7kwo8)8w*&gced'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
+django_heroku.settings(locals())
 
 # Application definition
 
